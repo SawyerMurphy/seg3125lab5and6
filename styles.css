@@ -1,0 +1,190 @@
+.logo {
+    display: block ;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    text-align: center ;
+}
+
+.intro-message {
+    font-size: small ;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    margin-left: 10px ;
+    margin-right: 10px ;
+}
+
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 10px ;
+}
+
+.contact-us-body {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-left: 30px ;
+}
+
+.footer {
+    font-family: 'Times New Roman', Times, serif ;
+    position: static ;
+    left: 0 ;
+    bottom: 0 ;
+    width: 100% ;
+    text-align: center ;
+}
+
+.personalInfoOne {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-left: 30px ;
+}
+
+.personalInfoTwo {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-left: 30px ;
+}
+
+.personalInfoThree {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-left: 30px ;
+}
+
+.calButton {
+    display: inline-block ;
+    background-color: inherit ;
+    cursor: pointer ;
+    border: 2px solid rgb(0, 0, 0) ;
+    color: black ;
+    font-family: 'Times New Roman', Times, serif ;
+    margin-left: 30px ;
+    border-radius: 6px ;
+    width: 225px ;
+}
+
+.calButton:hover {
+    /*The content inside this class is from http://www.corelangs.com/css/box/hover.html */
+    -moz-box-shadow: 0 0 10px rgb(149, 230, 112) ;
+    -webkit-box-shadow: 0 0 10px rgb(149, 230, 112) ;
+    box-shadow: 0 0 10px rgb(149, 230, 112) ;
+}
+
+.card {
+    font-family: 'Times New Roman', Times, serif ;
+}
+
+.accordion-item {
+    font-family: 'Times New Roman', Times, serif ;
+}
+
+.navBar {
+    display: flex ;
+    width: 100% ;
+    background-color: white ;
+    justify-content: center ;
+    position: fixed ;
+    z-index: 9999 ;
+    top: 0 ;
+    border: 2px solid black ;
+}
+
+.navBar a {
+    width: 16.66% ;
+    margin-left: auto ;
+    margin-right: auto ;
+    display: block ;
+}
+
+.navBar a:hover {
+    background-color: rgb(201, 196, 196) ;
+}
+
+.mainContent {
+    margin-top: 100px ;
+}
+
+.active {
+    background-color: rgb(201, 196, 196) ;
+}
+
+.infoTextBoxOne {
+    margin-left: 56px ;
+}
+
+.infoTextBoxOne:hover {
+    /*The content inside this class is from http://www.corelangs.com/css/box/hover.html */
+    -moz-box-shadow: 0 0 10px rgb(149, 230, 112) ;
+    -webkit-box-shadow: 0 0 10px rgb(149, 230, 112) ;
+    box-shadow: 0 0 10px rgb(149, 230, 112) ;
+}
+
+.infoTextBoxTwo:hover {
+    /*The content inside this class is from http://www.corelangs.com/css/box/hover.html */
+    -moz-box-shadow: 0 0 10px rgb(149, 230, 112) ;
+    -webkit-box-shadow: 0 0 10px rgb(149, 230, 112) ;
+    box-shadow: 0 0 10px rgb(149, 230, 112) ;
+}
+
+.paymentInfoOne {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-left: 30px ;
+    width: fit-content ;
+}
+
+.paymentInfoTwo {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-left: 30px ;
+}
+
+.cardNo {
+    width: 155px ;
+}
+
+.cardNo:hover {
+    /*The content inside this class is from http://www.corelangs.com/css/box/hover.html */
+    -moz-box-shadow: 0 0 10px rgb(149, 230, 112) ;
+    -webkit-box-shadow: 0 0 10px rgb(149, 230, 112) ;
+    box-shadow: 0 0 10px rgb(149, 230, 112) ;
+}
+
+.cvv {
+    width: 35px ;
+}
+
+.cvv:hover {
+    /*The content inside this class is from http://www.corelangs.com/css/box/hover.html */
+    -moz-box-shadow: 0 0 10px rgb(149, 230, 112) ;
+    -webkit-box-shadow: 0 0 10px rgb(149, 230, 112) ;
+    box-shadow: 0 0 10px rgb(149, 230, 112) ;
+}
+
+.paymentText {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-left: 30px ;
+}
+
+.paymentInfoThree {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-left: 30px ;
+}
+
+.nameOnCard {
+    width: 193px ;
+}
+
+.nameOnCard:hover {
+    /*The content inside this class is from http://www.corelangs.com/css/box/hover.html */
+    -moz-box-shadow: 0 0 10px rgb(149, 230, 112) ;
+    -webkit-box-shadow: 0 0 10px rgb(149, 230, 112) ;
+    box-shadow: 0 0 10px rgb(149, 230, 112) ;
+}
+
+.paymentInfoFour {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-left: 30px ;
+}
+
+.paymentInfoFive {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-left: 30px ;
+}

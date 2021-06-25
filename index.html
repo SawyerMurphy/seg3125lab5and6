@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>SEG 3125 Lab 5/6</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src = "functions.js"></script>
+        <link href = "styles.css" rel = "stylesheet" type = "text/css">
+    </head>
+    <body>
+        <div class = "navBar">
+            <a href = "#"><img src = "catalogue.png" width = "75" height = "75"></a>
+            <a href = "#first"><img src = "doctor.png" width = "75" height = "75"></a>
+            <a href = "#second"><img src = "pencil.png" width = "75" height = "75"></a>
+            <a href = "#third"><img src = "calendar.png" width = "75" height = "75"></a>
+            <a href = "#fourth"><img src = "wallet.png" width = "75" height = "75"></a>
+            <a href = "#fifth"><img src = "phone.png" width = "75" height = "75"></a>
+        </div>
+        <div class = "mainContent">
+                <div>
+                    <img src = "Logo.jpg" width = "150" height = "100" class = "logo"> <br>
+                    <h1>Soy's Vet Clinic</h1>
+                </div> <br>
+                <div class = "intro-message">
+                    <p>Your precious pets need medical attention? Talented and experienced veterinarians can be found on this site for the purpose of helping your loving animals! We currently do procedures on cats, dogs, parrots, and guinea pigs.</p>
+                </div> <br>
+                <div class = "services-header">
+                    <h3>Offered Services</h3>
+                </div>
+
+                <!--Everything to do with the accordion widget was originally created by Ryan Matte (https://github.com/RyanMatte/Website/tree/master) and the text was edited by Sawyer M.-->
+                <div class = "accordion accordion-flush" id = "accordionFlushExample">
+                    <div class = "accordion-item">
+                        <h2 class = "accordion-header" id = "flush-headingOne">
+                            <button class = "accordion-button collapsed" type = "button" data-bs-toggle = "collapse" data-bs-target = "#flush-collapseOne" aria-expanded = "false" aria-controls = "flush-collapseOne">
+                                Neuter Procedure
+                            </button>
+                        </h2>
+                        <div id = "flush-collapseOne" class = "accordion-collapse collapse" aria-labelledby = "flush-headingOne" data-bs-parent = "#accordionFlushExample">
+                            <div class = "accordion-body">
+                                In the chance that your pet may try to reproduce, it is crucial to have it neutered to prevent that from happening. <br>
+                                Your pet will be sedated prior to the procedure and they cannot eat for at least an hour after they leave the clinic. <br>
+                                Cost: $100.00/hour
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "accordion-item">
+                        <h2 class = "accordion-header" id = "flush-headingTwo">
+                            <button class = "accordion-button collapsed" type = "button" data-bs-toggle = "collapse" data-bs-target = "#flush-collapseTwo" aria-expanded = "false" aria-controls = "flush-collapseTwo">
+                                Dental Checkup
+                            </button>
+                        </h2>
+                        <div id = "flush-collapseTwo" class = "accordion-collapse collapse" aria-labelledby = "flush-headingTwo" data-bs-parent = "#accordionFlushExample">
+                            <div class = "accordion-body">
+                                Teeth needing a clean or not looking normal? Do not worry! A full mouth checkup will be completed to make sure every last tooth is healthy. <br>
+                                Your pet cannot eat anything (can drink water) for two hours prior to coming to the clinic.<br>
+                                Cost: $40.00/hour
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "accordion-item">
+                        <h2 class = "accordion-header" id = "flush-headingThree">
+                            <button class = "accordion-button collapsed" type = "button" data-bs-toggle = "collapse" data-bs-target = "#flush-collapseThree" aria-expanded = "false" aria-controls = "flush-collapseThree">
+                                Tick Removal Procedure
+                            </button>
+                        </h2>
+                        <div id = "flush-collapseThree" class = "accordion-collapse collapse" aria-labelledby = "flush-headingThree" data-bs-parent = "#accordionFlushExample">
+                            <div class = "accordion-body">
+                                Notice a critter on your pet that will not seem to budge when you try to remove it? Use this service! <br>
+                                The areas in which ticks are located will be examined and action will be taken to remove every single tick from your animal in the safest way possible. <br>
+                                Cost: $25.00/hour
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "accordion-item">
+                        <h2 class = "accordion-header" id = "flush-headingFour">
+                            <button class = "accordion-button collapsed" type = "button" data-bs-toggle = "collapse" data-bs-target = "#flush-collapseFour" aria-expanded = "false" aria-controls = "flush-collapseFour">
+                                Soft Tissue Procedure
+                            </button>
+                        </h2>
+                        <div id = "flush-collapseFour" class = "accordion-collapse collapse" aria-labelledby = "flush-headingFour" data-bs-parent = "#accordionFlushExample">
+                            <div class = "accordion-body">
+                                It is common to find a random bump on your pet and the severity of them may vary; however, you must immediately give your animal medical help if you believe that it has a tumor. <br>
+                                The areas in which tumors are located will be examined and a surgery will need to be performed as quickly and as safely as possible. Sedation is required and the animal cannot eat for three hours after leaving the clinic. <br>
+                                Cost: $150.00/hour
+                            </div>
+                        </div>
+                </div>
+                <div class = "accordion-item">
+                    <h2 class = "accordion-header" id = "flush-headingFive">
+                        <button class = "accordion-button collapsed" type = "button" data-bs-toggle = "collapse" data-bs-target = "#flush-collapseFive" aria-expanded = "false" aria-controls = "flush-collapseFive">
+                            Wound Procedure
+                        </button>
+                    </h2>
+                    <div id = "flush-collapseFive" class = "accordion-collapse collapse" aria-labelledby = "flush-headingFive" data-bs-parent = "#accordionFlushExample">
+                        <div class = "accordion-body">
+                            Notice that your pet is bleeding or has an open wound on their body? Come to the clinic to quickly resolve the issue! <br>
+                            The areas in which open wounds are located will be examined to determine whether the animal needs sedation for the procedure and then the stitching will commence. <br>
+                            Cost: $50.00/hour
+                        </div>
+                    </div>
+                </div>
+            </div> <br>
+            <div class = "fillerOne" id = "first"></div> <br> <br> <br> <br>
+            <div class = "vets-header">
+                <h3>Employed Veterinarians</h3>
+            </div> <br>
+
+            <!--Everything to do with the card widget was originally created by Ryan Matte (https://github.com/RyanMatte/Website/tree/master) and the text and pictures were edited by Sawyer M.-->
+            <div class = "row justify-content-around">
+                <div class = "card" style = "width: 25rem;">
+                    <img src = "Sabrina-Vet.jpg" class = "card-img-top" alt = "...">
+                    <div class = "card-body">
+                        <p class = "card-text">Name: Dr. Sabrina Brooks <br>
+                        Education: Doctor of Veterinary Medicine from Univeristy of Ottawa (Class of 2010) <br>
+                        Experienced in: Dental Chekup, Tick Removal Procedure, and Wound Procedure </p>
+                    </div>
+                </div>
+                <div class = "card" style = "width: 25rem;">
+                    <img src = "Caroline-Vet.jpg" class = "card-img-top" alt = "...">
+                    <div class = "card-body">
+                        <p class = "card-text">Name: Dr. Caroline James <br>
+                        Education: Doctor of Veterinary Medicine from Univeristy of Calgary (Class of 2006) <br>
+                        Experienced in: Dental Chekup, Tick Removal Procedure, Wound Procedure, and Neuter Procedure </p>
+                    </div>
+                </div>
+                <div class = "card" style = "width: 25rem;">
+                    <img src = "Duncan-Vet.jpg" class = "card-img-top" alt = "...">
+                    <div class = "card-body">
+                        <p class = "card-text">Name: Dr. Duncan Grath <br>
+                        Education: Doctor of Veterinary Medicine from Ryerson University (Class of 1998) <br>
+                        Experienced in: Dental Chekup, Tick Removal Procedure, Wound Procedure, Neuter Procedure, and Soft Tissue Procedure </p>
+                    </div>
+                </div>
+            </div>
+            <div class = "fillerTwo" id = "second"></div> <br> <br> <br> <br>
+            <div class = "information-header">
+                <h3>Client Information</h3>
+                <div class = "personalInfoOne">
+                    Name: <input type = "text" class = "infoTextBoxOne" placeholder = "Enter Full Name"> <br>
+                    Email Address: <input type = "text" class = "infoTextBoxTwo" placeholder = "soysvetclinic@hotmail.com"> <br>
+                </div> <br>
+                <div class = "personalInfoTwo">
+                    Type of Animal: <br>
+                    <input type = "radio" name = "animalType" value = "dog"> Dog <br>
+                    <input type = "radio" name = "animalType" value = "cat"> Cat <br>
+                    <input type = "radio" name = "animalType" value = "parrot"> Parrot <br>
+                    <input type = "radio" name = "animalType" value = "guineaPig"> Guinea Pig <br>
+                </div> <br>
+                <div class = "personalInfoThree">
+                    Needed Procedure(s): <br>
+                    <input type = "checkbox" value = "neuter"> Neuter Procedure <br>
+                    <input type = "checkbox" value = "dental"> Dental Checkup <br>
+                    <input type = "checkbox" value = "tick"> Tick Removal Procedure <br>
+                    <input type = "checkbox" value = "soft"> Soft Tissue Procedure <br>
+                    <input type = "checkbox" value = "wound"> Wound Procedure
+                </div> <br>
+            <div class = "fillerThree" id = "third"></div>
+            <div class = "scheduleHeader">
+                <h3>Schedule an Appointment</h3>    
+            </div>
+            <div class = "calendarButton">
+                <input type = "text" class = "calButton" id = "dateInput" placeholder = "Click Here to View the Calendar">
+            </div>
+            </div> <br>
+            <div class = "fillerFour" id = "fourth"></div>
+            <div class = "payment-header">
+                <h3>Payment</h3>
+            </div>
+            <div class = "paymentText">
+                You can hover over any text field in this section for information that may help you efficiently complete your payment.
+            </div> <br>
+            <div class = "paymentInfoOne">
+                Name on Card: <input type = "text" class = "nameOnCard" id = "cardNoInput" placeholder = "Enter Name" title = "There is a name that is present on the front of the credit card.">
+            </div>
+            <div class = "paymentInfoTwo">
+                Credit Card Number: <input type = "text" class = "cardNo" id = "cardNoInput" placeholder = "xxxx-xxxx-xxxx-xxxx" title = "Credit cards with only 16 digits are used on this site.">
+            </div>
+            <div class = "paymentInfoThree">
+                Card Verification Value (CVV): <input type = "text" class = "cvv" id = "cvvInput" placeholder = "xxx" title = "The CVV is the three-digit number on the back of the credit card.">
+            </div>
+            <div class = "paymentInfoFour">
+                Expiration Month: <select name = "month" class = "expMonth">
+                    <option value = "jan" selected = "selected"> January </option>
+                    <option value = "feb"> February </option>
+                    <option value = "mar"> March </option>
+                    <option value = "apr"> April </option>
+                    <option value = "may"> May </option>
+                    <option value = "jun"> June </option>
+                    <option value = "jul"> July </option>
+                    <option value = "aug"> August </option>
+                    <option value = "sep"> September </option>
+                    <option value = "oct"> October </option>
+                    <option value = "nov"> November </option>
+                    <option value = "dec"> December </option>
+                    </select>
+            </div>
+            <div class = "paymentInfoFive">
+                Expiration Year: <select name = "year" class = "expYear">
+                    <option value = "one" selected = "selected"> 21 </option>
+                    <option value = "two"> 22 </option>
+                    <option value = "three"> 23 </option>
+                    <option value = "four"> 24 </option>
+                    <option value = "five"> 25 </option>
+                    <option value = "six"> 26 </option>
+                    </select>
+            </div> <br>
+            <div class = "fillerFive" id = "fifth"></div>
+            <div class = "contact-us-header">
+                <h3>Contact Us</h3>
+                <p class = "contact-us-body">Clinic Address: 538 Fallon Drive, Ontario, Canada <br>
+                Email Address: soysvetclinic@hotmail.com <br>
+                Working Hours: 9:00 AM - 6:00 PM on Weekdays and 9:00 AM - 3:00 PM on Saturday/Sunday</p>
+            </div> <br>
+        </div>
+    </body>
+
+    <footer class = "footer">This website was designed by Soy </footer>
+
+    <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity = "sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin = "anonymous"></script>
+</html>
