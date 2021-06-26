@@ -4,7 +4,7 @@ var unavailableDates = ["29/06/2020","07/07/2020","10/07/2020"] ;
 const setDateFormat = "dd/mm/yy" ;
 
 function disableDates(date) {
-    if (date.getDay() === 1)
+    if (date.getDay() === 0)
         return [false] ;
     var string = jQuery.datepicker.formatDate(setDateFormat, date) ;
     return [ unavailableDates.indexOf(string) === -1 ]
@@ -77,9 +77,6 @@ function checkAvailableVets() {
 }
 
 function paymentSubmission() {
-    //console.log(cardNoValidator(document.getElementById('cardNoInputTwo').value)) ;
-    //console.log(emailValidator(document.getElementById('email').value)) ;
-    //console.log(cvvValidator(document.getElementById('cvvInput').value)) ;
     if((cardNoValidator(document.getElementById('cardNoInputTwo').value)) && (emailValidator(document.getElementById('email').value)) && (cvvValidator(document.getElementById('cvvInput').value))) {
         window.alert('Payment Complete!\nYour Appointment Has Been Scheduled!') ;
     } else {
