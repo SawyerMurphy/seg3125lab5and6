@@ -111,6 +111,9 @@
             <div class = "vets-header">
                 <h3>Employed Veterinarians</h3>
             </div> <br>
+            <div class = "vetsText">
+                Please be aware that some veterinarians can do some specific services. For example: Dr. James can do all services except for the Soft Tissue Procedure.
+            </div> <br>
 
             <!--Everything to do with the card widget was originally created by Ryan Matte (https://github.com/RyanMatte/Website/tree/master) and the text and pictures were edited by Sawyer M.-->
             <div class = "row justify-content-around">
@@ -148,18 +151,18 @@
                 </div> <br>
                 <div class = "personalInfoTwo">
                     Type of Animal: <br>
-                    <input type = "radio" name = "animalType" value = "dog"> Dog <br>
-                    <input type = "radio" name = "animalType" value = "cat"> Cat <br>
-                    <input type = "radio" name = "animalType" value = "parrot"> Parrot <br>
-                    <input type = "radio" name = "animalType" value = "guineaPig"> Guinea Pig <br>
+                    <input type = "radio" name = "animalType" id = "dog" value = "dog"> Dog <br>
+                    <input type = "radio" name = "animalType" id = "cat" value = "cat"> Cat <br>
+                    <input type = "radio" name = "animalType" id = "parrot" value = "parrot"> Parrot <br>
+                    <input type = "radio" name = "animalType" id = "guineaPig" value = "guineaPig"> Guinea Pig <br>
                 </div> <br>
                 <div class = "personalInfoThree">
                     Needed Procedure(s): <br>
-                    <input type = "checkbox" value = "neuter"> Neuter Procedure <br>
-                    <input type = "checkbox" value = "dental"> Dental Checkup <br>
-                    <input type = "checkbox" value = "tick"> Tick Removal Procedure <br>
-                    <input type = "checkbox" value = "soft"> Soft Tissue Procedure <br>
-                    <input type = "checkbox" value = "wound"> Wound Procedure
+                    <input type = "checkbox" id = "neuter" onclick = "checkAvailableVets()" value = "neuter"> Neuter Procedure <br>
+                    <input type = "checkbox" id = "dental" onclick = "checkAvailableVets()" value = "dental"> Dental Checkup <br>
+                    <input type = "checkbox" id = "tick" onclick = "checkAvailableVets()" value = "tick"> Tick Removal Procedure <br>
+                    <input type = "checkbox" id = "soft" onclick = "checkAvailableVets()" value = "soft"> Soft Tissue Procedure <br>
+                    <input type = "checkbox" id = "wound" onclick = "checkAvailableVets()" value = "wound"> Wound Procedure
                 </div> <br>
                 <div class = "personalInfoFour">
                     Preferred Veterinarian: <br>
@@ -170,7 +173,7 @@
             <div class = "fillerThree" id = "third"></div>
             <div class = "scheduleHeader">
                 <h3>Schedule an Appointment</h3>    
-            </div>
+            </div> <br>
             <div class = "calendarButton">
                 <input type = "text" class = "calButton" id = "dateInput" placeholder = "Click Here to View the Calendar">
             </div>
@@ -216,6 +219,9 @@
             </div>
             <div class = "paymentInfoThree">
                 Card Verification Value (CVV): <input type = "text" class = "cvv" id = "cvvInput" placeholder = "xxx" onfocusout = "cvvValidator(document.getElementById('cvvInput').value)" title = "The CVV is the three-digit number on the back of the credit card.">
+            </div> <br>
+            <div class = "submitPayment">
+                <button type = "button" class = "submitPaymentButton" onclick = "paymentSubmission()">Complete Payment</button>
             </div> <br>
             <div class = "fillerFive" id = "fifth"></div>
             <div class = "contact-us-header">

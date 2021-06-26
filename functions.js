@@ -48,15 +48,42 @@ function emailValidator(emailAddress) {
 }
 
 function cvvValidator(cvv) {
-
     var cvvLayout = /^[0-9]{3}$/ ;
-
-    console.log(cvv) ;
 
     if(cvvLayout.test(cvv)) {
         return true ;
     } else {
         window.alert('The CVV Entered is Invalid, Please Check for Mistakes.\nThe Required Format is: xxx') ;
+        return false ;
     }
+}
 
+function checkAvailableVets() {
+    if(document.getElementById("soft").checked == true) {
+        document.getElementById("brooks").disabled = true ;
+        document.getElementById("james").disabled = true ;
+    } else if(document.getElementById("neuter").checked == true) {
+        document.getElementById("brooks").disabled = true ;
+    } else if((document.getElementById("soft").checked == false) && (document.getElementById("neuter").checked == false)) {
+        document.getElementById("james").disabled = false ;
+        document.getElementById("brooks").disabled = false ;
+    } else if(document.getElementById("neuter").checked == false) {
+        document.getElementById("brooks").disabled = false ;
+    } else if((document.getElementById("soft").checked == false) && (document.getElementById("neuter").checked == true)) {
+        document.getElementById("james").disabled = false ;
+    } else {
+        return ;
+    }
+}
+
+function paymentSubmission() {
+    //console.log(cardNoValidator(document.getElementById('cardNoInputTwo').value)) ;
+    //console.log(emailValidator(document.getElementById('email').value)) ;
+    //console.log(cvvValidator(document.getElementById('cvvInput').value)) ;
+    if((cardNoValidator(document.getElementById('cardNoInputTwo').value)) && (emailValidator(document.getElementById('email').value)) && (cvvValidator(document.getElementById('cvvInput').value))) {
+        window.alert('Payment Complete!\nYour Appointment Has Been Scheduled!') ;
+    } else {
+        window.alert('Payment Failed.\nPlease Check if Your Payment Details Meet the Requirements.')
+        return ;
+    }
 }

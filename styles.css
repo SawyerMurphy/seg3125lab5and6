@@ -200,3 +200,33 @@ h3 {
     font-family: 'Times New Roman', Times, serif ;
     margin-left: 30px ;
 }
+
+/*The below "input[type = 'radio']:disabled" function is from this site: https://stackoverflow.com/questions/32498587/how-to-change-the-ugly-cursor-image-on-disabled-radio-buttons-checkboxes */
+
+input[type = 'radio']:disabled {
+    cursor: not-allowed ;
+}
+
+.vetsText {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-left: 30px ;
+}
+
+.accordion-item:hover {
+    background-color: rgb(201, 196, 196) ;
+}
+
+/*The below button styling can be found here: https://www.w3schools.com/css/css3_buttons.asp */
+
+.submitPaymentButton {
+    font-family: 'Times New Roman', Times, serif ;
+    margin-left: 30px ;
+    background-color: #4CAF50 ;
+    border: none ;
+    color: white ;
+    padding: 15px 32px ;
+    text-align: center ;
+    text-decoration: none ;
+    display: inline-block ;
+    font-size: 16px ;
+}
